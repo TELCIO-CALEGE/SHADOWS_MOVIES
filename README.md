@@ -37,7 +37,7 @@ npm run preview
 
 O projecto está preparado para publicação através do GitHub Actions e GitHub Pages.
 
-URL prevista: https://telcio-calege.github.io/SHADOWS_MOVIES/
+URL: https://telcio-calege.github.io/SHADOWS_MOVIES/
 
 Em **Settings → Pages**, seleccionar **GitHub Actions** como origem de publicação, caso ainda não esteja configurada.
 

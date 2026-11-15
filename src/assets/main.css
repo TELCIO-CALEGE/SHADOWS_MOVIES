@@ -1,0 +1,22 @@
+@import './base.css';
+:root{--bg:#080910;--panel:#11131e;--muted:#a4a3b7;--line:#282735;--purple:#a58bff;--gold:#ffd28b}
+#app{min-height:100vh}
+.site-shell{min-height:100vh;display:flex;flex-direction:column;background:var(--bg)}
+.container{width:min(1250px,calc(100% - 48px));margin:0 auto}
+.site-header{position:sticky;top:0;z-index:40;background:#080910ed;border-bottom:1px solid #ffffff13;backdrop-filter:blur(18px)}
+.nav-wrap{min-height:80px;display:flex;align-items:center;gap:50px}
+.brand{display:flex;align-items:center;gap:12px;font-size:17px;font-weight:850;letter-spacing:-.9px;white-space:nowrap}
+.brand-icon{display:grid;place-items:center;position:relative;width:43px;height:43px;border-radius:13px;background:linear-gradient(135deg,#c2a6ff,#6852c4);box-shadow:0 6px 22px #8966ec3d;color:#080910;font-size:25px;font-weight:950;font-style:italic}
+.brand-icon i{position:absolute;right:-6px;top:-9px;color:#ffdb9b;font-size:15px;font-style:normal}
+.accent{color:var(--purple)}
+.nav-links{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:650;color:#b6b4c5}
+.nav-links a{padding:30px 0}
+.nav-links a:hover,.nav-links a.active{color:#fff}
+.nav-caption{margin-left:auto;font-size:10px;font-weight:750;letter-spacing:2px;color:#b4b0c7;white-space:nowrap}
+.nav-caption i{display:inline-block;width:7px;height:7px;margin-right:7px;border-radius:50%;background:#c1a1ff;box-shadow:0 0 12px #c1a1ff}
+.site-footer{margin-top:auto;border-top:1px solid #262431;padding:28px 0;background:#0b0c14}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.footer-inner strong{font-size:13px;letter-spacing:.4px}
+.footer-inner>span,.footer-inner small{font-size:12px;color:#87869c}
+@media(max-width:900px){.nav-caption{display:none}.nav-wrap{justify-content:space-between;gap:16px}}
+@media(max-width:600px){.container{width:calc(100% - 30px)}.nav-wrap{min-height:68px}.brand-icon{width:37px;height:37px}.brand{font-size:13px}.nav-links{gap:14px;font-size:12px}.nav-links a{padding:23px 0}.footer-inner{flex-direction:column;text-align:center;gap:6px}}
